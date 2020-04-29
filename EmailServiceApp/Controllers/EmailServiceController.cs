@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EmailServiceApp.Models;
 using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Mvc;
 using MimeKit;
@@ -29,17 +30,17 @@ namespace EmailServiceApp.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post()
+        public void Post([FromBody]Email email)
         {
             var message = new MimeMessage();
 
             message.From.Add(new MailboxAddress("Derien", "derienthedev@outlook.com"));
-            message.To.Add(new MailboxAddress("Haniaroad", "derien@whoosaid.com"));
-            message.Subject = "Third attempt";
+            message.To.Add(new MailboxAddress(email.ToName, email.ToEmail));
+            message.Subject = email.Subject;
 
             message.Body = new TextPart("plain")
             {
-                Text = "This was sent from your C# email service"
+                Text = email.Body
             };
 
             using (var client = new SmtpClient())

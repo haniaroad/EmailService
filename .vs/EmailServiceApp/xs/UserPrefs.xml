@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{7A1AA5F9-17C8-4C89-87FD-266479BA8440}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="EmailServiceApp/Models/Email.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EmailServiceApp/ClientApp/src/App.js">
     <Files>
-      <File FileName="EmailServiceApp/Controllers/EmailServiceController.cs" Line="6" Column="1" />
-      <File FileName="EmailServiceApp/Models/Email.cs" Line="6" Column="6" />
+      <File FileName="EmailServiceApp/Controllers/EmailServiceController.cs" Line="42" Column="14" />
+      <File FileName="EmailServiceApp/Models/Email.cs" Line="10" Column="1" />
+      <File FileName="EmailServiceApp/ClientApp/src/components/Home.js" Line="1" Column="1" />
+      <File FileName="EmailServiceApp/ClientApp/src/components/Email.js" Line="50" Column="1" />
+      <File FileName="EmailServiceApp/ClientApp/src/App.js" Line="20" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,9 +13,14 @@
           <Node name="EmailServiceApp" expanded="True">
             <Node name="EmailServiceApp" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Email.cs" selected="True" />
+              <Node name="ClientApp" expanded="True">
+                <Node name="src" expanded="True">
+                  <Node name="components" expanded="True" />
+                  <Node name="App.js" selected="True" />
+                </Node>
               </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
